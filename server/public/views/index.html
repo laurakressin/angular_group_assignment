@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TwitHandler">
+<head>
+    <meta charset="UTF-8">
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/assets/scripts/app.min.js"></script>
+    <title></title>
+</head>
+<body ng-controller="MainController">
+    <h1>Potential Twitter Handles</h1>
+
+    <ul>
+        <li ng-repeat="word in name"><a ng-href="https://twitter.com/{{word}}">{{word}}</a></li>
+    </ul>
+
+</body>
+</html>
