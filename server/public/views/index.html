@@ -2,16 +2,25 @@
 <html lang="en" ng-app="TwitHandler">
 <head>
     <meta charset="UTF-8">
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <link href="/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="/views/stylesheet.css" rel="stylesheet">
     <script src="/vendor/angular/angular.min.js"></script>
     <script src="/assets/scripts/app.min.js"></script>
     <title></title>
 </head>
 <body ng-controller="MainController">
-    <h1>Potential Twitter Handles</h1>
+   <div class="jumbotron ">
+           <h1>Snafu Inc.</h1>
+           <h3>Potential Twitter Handles - More Glam for Our Nerds!</h3>
+   </div>
+   <div class="mid-col-11 mid-col-offset-3">
 
-    <ul>
-        <li ng-repeat="word in name"><a ng-href="https://twitter.com/{{word}}">{{word}}</a></li>
+   <ul>
+        <li ng-repeat="handle in handles track by $index"><a ng-href="https://twitter.com/{{handle}}" target="_blank"> @{{handle}} </a></li>
     </ul>
+   </div>
 
 </body>
 </html>

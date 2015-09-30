@@ -1,0 +1,28 @@
+.jumbotron {
+    text-align: center;
+    background-color: #5EAADE;
+    font-family: "Gotham Narrow", Verdana;
+    color: #e1e8ed;
+    border-bottom: 15px solid #66757f;
+
+}
+
+ul li {
+    text-align: center;
+    list-style: none;
+    font-size: 32px;
+}
+
+body {
+    background-image: url("http://thenextweb.com/wp-content/blogs.dir/1/files/2015/03/0318_twitter.jpg");
+    font-family: "Gotham Narrow", Verdana;
+
+}
+
+a {
+    color: #66757f;
+}
+
+a:hover {
+    color: #292f33;
+}
